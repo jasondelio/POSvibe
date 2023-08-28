@@ -1,0 +1,109 @@
+.order-sidebar-container {
+  width: 28%; /* Adjust the width as needed */
+  height: 100%;
+  background-color: white; /* Right sidebar background color */
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.order-list-container{
+  overflow: auto;
+  min-height: 0;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.current-order-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #cfcdcd;
+}
+
+
+.top-container .clear-button .ant-btn-primary {
+  background-color: #a8071a;
+}
+
+.top-container .clear-button .ant-btn-primary:hover {
+  background-color: #cf1322 !important;
+}
+
+.top-container .setting-button .ant-btn-primary{
+  background-color: #434343;
+}
+
+.top-container .setting-button .ant-btn-primary:hover{
+  background-color: #c2bfbf !important;
+}
+
+.top-container .button-container{
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+
+.footer-container .place-order-btn {
+  background-color: #237804;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-container .place-order-btn:hover {
+  background-color: #389e0d !important;
+}
+
+.footer-container .change-order-btn {
+  background-color: #873800;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-container .change-order-btn:hover {
+  background-color: #d46b08!important;
+}
+
+.footer-container .pay-order-btn {
+  background-color: #002c8c;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-container .pay-order-btn:hover {
+  background-color: #0958d9!important;
+}
+
+.footer-container .ant-btn-primary:disabled {
+  background-color: #cfcdcd;
+}
+
+.footer-container .ant-btn-primary:disabled:hover {
+  background-color: #cfcdcd !important;
+}
+
+.payment-details-container{
+  background-color: #e7e6e6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.payment-details-item{
+  display: flex;
+  justify-content: space-between;
+}
+
+

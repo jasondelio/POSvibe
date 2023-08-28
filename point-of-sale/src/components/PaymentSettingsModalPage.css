@@ -1,0 +1,19 @@
+.payment-settings-custom-modal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.payment-settings-modal-footer .btn-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.max-allowed-text{
+    font-size: 12px;
+    color: gray;
+}
+
+

@@ -1,0 +1,29 @@
+.products-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.products-main-container {
+  display: flex;
+  flex: 1;
+  background-color: #e7e6e6;
+  overflow-y: hidden;
+}
+
+.header-products-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.products-main-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+

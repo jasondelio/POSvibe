@@ -1,0 +1,48 @@
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.ant-spin-dot-item {
+  background-color: black !important;
+}
+
+.ant-input-affix-wrapper:hover {
+  border-color: black !important;
+}
+
+.ant-input-affix-wrapper-focused {
+  border-color: black !important;
+  box-shadow: none;
+}
+
+:root {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+}
+
+.ant-btn-primary:hover{
+  background-color: none;
+}
+
+.app-container{
+  height: 100vh;
+}

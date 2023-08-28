@@ -1,0 +1,98 @@
+.order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.item-name {
+  width: 30%;
+  max-width: 30%; 
+  overflow-wrap: break-word;
+}
+
+.item-qty {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border: none;
+  background-color: #e7e6e6;
+}
+
+.item-price {
+  width: 20%;
+  display: flex;
+  justify-content: right;
+}
+
+.order-item .icon-container{
+  display: flex;
+}
+
+.qty-btn-container {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.qty-btn-container .ant-btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #525252;
+  color: white;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  
+}
+
+.qty-btn-container .ant-wave {
+  color: #525252;
+}
+
+.qty-btn-container .ant-btn-primary:hover {
+  background-color: #525252 !important;
+}
+
+.qty-btn-container .ant-btn-primary:disabled {
+  background-color: #c3c1c1 !important;
+}
+
+@media (max-width: 1500px) {
+  .order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+
+  .qty-btn-container .ant-btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #525252;
+    color: white;
+    font-size: 18px;
+    height: 25px;
+    width: 25px;
+    padding: 0;
+  }
+
+  .item-qty{
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border: none;
+    background-color: #e7e6e6;
+  }
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

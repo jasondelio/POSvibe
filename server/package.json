@@ -1,0 +1,27 @@
+{
+  "name": "point-of-sale-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "@socket.io/redis-adapter": "^8.2.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.3.1",
+    "express": "~4.16.1",
+    "http": "^0.0.1-security",
+    "http-errors": "~1.6.3",
+    "image-size": "^1.0.2",
+    "jade": "~1.11.0",
+    "mongoose": "^7.4.0",
+    "morgan": "~1.9.1",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.0.1",
+    "redis": "^4.6.7",
+    "sharp": "^0.32.4",
+    "socket.io": "^4.7.1"
+  }
+}

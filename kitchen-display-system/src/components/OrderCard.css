@@ -1,0 +1,85 @@
+.order-card-container {
+  width: 350px;
+  color: black;
+  background-color: white;
+  overflow: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-card-header {
+  color: white;
+  padding: 5px;
+}
+
+.order-card-header-item-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-card-header-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.order-card-order-list {
+  overflow: auto;
+  flex: 1;
+  padding: 5px;
+}
+
+.action-btn {
+  border: none;
+  font-weight: bold;
+  color: white;
+  height: 35px;
+  cursor: pointer;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 15px;
+  border-bottom: 1px solid #cfcdcd;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.order-sub-item {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+}
+
+.order-sub-item-checked {
+    opacity: 0.5;
+}
+
+.order-sub-item .order-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-sub-item .order-notes {
+  font-weight: normal;
+  color: red;
+}
+
+.order-name,
+.order-notes {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+@keyframes blink {
+    0%, 100% {
+        background-color: #f5222d;
+      }
+      50% {
+        background-color: #a8071a; /* Dark red */
+      }
+  }

@@ -1,0 +1,68 @@
+.table-custom-modal-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.table-custom-modal-footer .btn-container{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.table-custom-modal-container {
+  height: calc(73vh - 20px);
+  overflow-y: auto;
+  
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.table-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.table-custom-modal-container::-webkit-scrollbar{
+  width: 0px;
+}
+
+.ant-modal-title {
+  font-size: 20px !important;
+}
+
+.table-card {
+  background-color: #525252;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chosen-table-card{
+  background-color: #525252;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.table-name{
+  overflow-wrap: break-word;
+  max-width: 95%;
+  text-align: center;
+}
+
+.customer-name-input{
+  padding: 10px;
+}

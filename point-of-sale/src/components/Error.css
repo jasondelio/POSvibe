@@ -1,0 +1,14 @@
+.error-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+.error-message{
+    margin-top: -5px;
+    font-size: 20px;
+    text-align: center;
+    width: 80vh;
+}

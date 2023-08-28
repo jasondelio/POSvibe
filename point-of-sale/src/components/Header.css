@@ -1,0 +1,29 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cfcdcd;
+  padding: 5px;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 10px;
+}
+
+
+.table-details-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 5px;
+}
+
+.header-container .ant-btn-primary {
+  background-color: #002c8c;
+}
+
+.header-container .ant-btn-primary:hover {
+  background-color: #0958d9 !important;
+}
