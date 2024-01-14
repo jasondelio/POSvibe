@@ -19,7 +19,7 @@ const setUpSocketIoServer = require("./socket-io");
 const connectMongoDB = require("./configuration/mongo-configuration");
 const connectRedis = require("./configuration/redis-configuration");
 
-const redisClient = redis.createClient({ url: "redis://127.0.0.1:6379" });
+const redisClient = redis.createClient({ url: process.env.REDIS_URL });
 
 require("dotenv").config();
 const app = express();
