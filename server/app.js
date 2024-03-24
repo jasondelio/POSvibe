@@ -6,6 +6,7 @@ const logger = require("morgan");
 const cors = require("cors");
 const http = require("http");
 const bodyParser = require("body-parser");
+require("dotenv").config();
 
 const indexRouter = require("./routes/index");
 const categoryRouter = require("./routes/category-route");
@@ -19,9 +20,8 @@ const setUpSocketIoServer = require("./socket-io");
 const connectMongoDB = require("./configuration/mongo-configuration");
 const connectRedis = require("./configuration/redis-configuration");
 
-const redisClient = redis.createClient({ url: "redis://127.0.0.1:6379" });
+const redisClient = redis.createClient({ url: process.env.REDIS_URL });
 
-require("dotenv").config();
 const app = express();
 
 connectMongoDB();
@@ -66,8 +66,8 @@ app.use(function (err, req, res, next) {
   res.render("error");
 });
 
-socketIoApp.listen(5001, () => {
-  console.log("Socket.IO server is running on port 5001");
+socketIoApp.listen(process.env.IO_PORT, () => {
+  console.log(`Socket.IO server is running on port ${process.env.IO_PORT}`);
 });
 
 module.exports = app;
